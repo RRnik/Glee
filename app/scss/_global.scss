@@ -23,7 +23,7 @@ body{
 }
 
 a{
-	color:#436372;
+	color: $default;
 	font-size: 14px;
 	line-height: 21px;
 	@extend %rubik-400;

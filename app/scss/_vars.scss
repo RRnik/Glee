@@ -21,3 +21,24 @@ $bg:#fef7f0;
 	font-family: 'Rubik-Regular', sans-serif;
 	font-weight: 500;
 }
+
+%poppins-700{
+	font-family: 'Poppins-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%btn{
+	padding: 24px 100px 24px 25px;
+		background-color: transparent;
+		color: #fff;
+		@extend %rubik-500;
+		font-size: 15px;
+		line-height: 12px;
+		position: relative;
+		&::after{
+			content: url(../images/icons/arrow-btn.svg);
+			position: absolute;
+			right: 23px;
+			top: 26px;
+		}
+}
