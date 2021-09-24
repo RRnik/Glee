@@ -27,6 +27,7 @@
 		content: '+';
 		position: absolute;
 		right: -12px;
+		top: -3px;
 		align-items: center;
 	}
 }
@@ -163,14 +164,17 @@
 		top: 0;
 	}
 }
+
 .top-slider{
+	max-width: 1770px;
+	margin: 0 auto;
 	background-color: #fcd7b6;
 	padding: 100px 0 45px;
 	&__container{
 		max-width: 1450px;
 		padding: 0 15px;
 		margin: 0 auto;
-}
+	}
 	&__item{
 		display: flex !important;
 		justify-content: space-between;
@@ -225,6 +229,7 @@
 				@extend %rubik-500;
 				font-size: 11px;
 				line-height: 8px;
+				cursor: pointer;
 			}
 			&.slick-active{
 				button{
@@ -234,6 +239,61 @@
 		}	
 	}
 }
+
+.info{
+	max-width: 1770px;
+	margin: 0 auto;
+	background-color:#fef7f0;
+	padding: 45px 0;
+	&__inner{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&__item{
+		max-width: 280px;
+		margin: 0 auto;
+		padding-left: 80px;
+		position: relative;
+		&::before{
+			content:'';
+			position: absolute;
+			width: 52px;
+			height: 45px;
+			left: 0;
+			top: 3px;
+		}
+	}
+	&__item-support{
+	&::before{
+		content: url(../images/icons/support-icon.png);
+	}
+}
+	
+	&__item-delivery{
+		max-width: 295px;
+		&::before{
+			content: url(../images/icons/delivery-icon.png);
+			top: 10px;
+		}
+	}
+	&__item-payment{
+		&::before{
+			content: url(../images/icons/payment-icon.png);
+	}
+}
+	&__title{
+		@extend %dmsans-700;
+		font-size: 18px;
+		line-height: 19px;
+		color: #414141;
+		margin-bottom: 10px;
+	}
+	&__text{
+		color: #636362;
+		line-height: 20px;
+	}
+}
+
 
 
 @import'media';
