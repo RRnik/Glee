@@ -6,4 +6,11 @@ $ (function () {
 		autoplay: true,
 		autoplaySpeed: 2000,
 	})
+
+	var Mixer = mixitup('.galery__content',{
+		animation: {
+		enable: false
+    }
+	});
+	
 });

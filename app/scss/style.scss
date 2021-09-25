@@ -170,11 +170,6 @@
 	margin: 0 auto;
 	background-color: #fcd7b6;
 	padding: 100px 0 45px;
-	&__container{
-		max-width: 1450px;
-		padding: 0 15px;
-		margin: 0 auto;
-	}
 	&__item{
 		display: flex !important;
 		justify-content: space-between;
@@ -291,6 +286,142 @@
 	&__text{
 		color: #636362;
 		line-height: 20px;
+	}
+}
+
+  
+.galery{
+	margin: 75px 0 105px;
+	&__top{
+		text-align: center;
+	}
+	&__top-title{
+		color: $title;
+		font-size: 36px;
+		@extend %dmsans-700;
+		margin-bottom: 28px;
+	}
+	&__btn{
+		background-color: transparent;
+		border: none;
+		color: #8b8b8b;
+		font-size: 16px;
+		@extend %dmsans-700;
+		cursor: pointer;
+		margin-bottom: 78px;
+		&:hover{
+			color: $title;
+		}
+	}
+	.mixitup-control-active{
+		color: $title;
+	}
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		text-align: center;
+		grid-column-gap: 30px;
+		grid-row-gap: 37px;
+		
+	}
+	&__item{
+		height: 400px;
+		box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		padding-bottom: 35px;
+		transition: all .5s;
+		&:hover{
+			.galery__icon{
+				display: inline;
+				display: grid;
+				grid-template-columns: 40px 40px 40px;
+				grid-column-gap: 15px;
+				align-items: center;
+			}
+		}
+	}
+	&__item__block-img{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		height: 252px;
+	}
+	&__item-img{
+		display: inline;
+		margin: 57px auto 0;
+		
+	}
+	&__icon{
+		position: absolute;
+		display: none;
+	}
+	&__icon-link{
+		padding: 6px 0 ;
+		background-color: #fff;
+		border-radius: 50%;
+		transition: all .3s;
+		&:hover{
+			background-color: #a3bac7;
+			path{
+				fill:#fff;
+			}
+		}
+	}
+	&__item-title{
+		color: #243f4d;
+		@extend %dmsans-700;
+	}
+	&__item-pricing{
+		color: #a3bbc8;
+		@extend %dmsans-700;
+	}
+}
+
+.products{
+	margin-top: 185px;
+	&__inner{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 35px;
+	}
+	&__item{
+		height: 390px;
+		background-color: #feefe2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	&__item-img{
+		position: absolute;
+		left: 15%;
+		top: -20%;
+	}
+	&__item-content{
+		width: 625px;
+		color: #243f4d;
+		padding-left: 280px;
+	}
+	&__title{
+		@extend %dmsans-700;
+		font-size: 26px;
+		line-height: 32px;
+		margin-bottom: 25px;
+	}
+	&__text{
+		margin-bottom: 35px;
+	}
+	&__btn{
+		@extend %btn;
+		color: #436372;
+		border: 1px solid #b3b7b5;
+		border-radius: 10px;
+		&::after{
+			content: url(../images/icons/arrow-btn-black.svg);
+		}
 	}
 }
 
