@@ -33,3 +33,10 @@ a{
 	line-height: 21px;
 	@extend %rubik-400;
 }
+
+.title{
+	color: $title;
+	font-size: 36px;
+	@extend %dmsans-700;
+	margin-bottom: 28px;
+}
