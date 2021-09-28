@@ -82,7 +82,6 @@
 }
 
 .footer-top{
-	padding: 75px 0;
 	border-bottom: 1px solid #dae4e9;
 	display: flex;
 	justify-content: space-between;
@@ -312,6 +311,7 @@
 		padding-bottom: 35px;
 		transition: all .5s;
 		&:hover{
+			border: 1px solid #a3bbc8;
 			.galery__icon{
 				display: inline;
 				display: grid;
@@ -424,15 +424,15 @@
 		@extend %dmsans-700;
 		padding-top: 40px;
 		padding-left: 35px;
+		&:hover{
+			border: 1px solid #a3bbc8;
+		}
 	}
 	&__title{
 		font-size: 20px;
 		color: #191919;
 		margin-bottom: 16px;
 		width: 170px;
-		&:hover{
-			color: #a3bbc8;
-		}
 	}
 	&__subtitle{
 		color: #a3bbc8;
@@ -449,8 +449,12 @@
 		align-items: center;
 	}
 }
-
 .news{
+	padding-bottom: 160px;
+ 	background-image: url(../images/news-bg.jpg);
+ 	background-position: bottom ;
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 57%;
 	&__top{
 		display: flex;
 		justify-content: space-between;
@@ -471,13 +475,66 @@
 	&__content{
 		display: grid;
 		grid-template-columns: repeat(3,1fr);
+		grid-column-gap: 30px;
 		min-height: 423px;
+		margin-bottom: 94px;		
+	}
+	&__content-img{
+		width: 100%;
+		display: inline-block;
+	}
+	&__content-item{
+		background-color: #fff;	
+	}
+	&__content-bottom{
+		margin:0 28px;
+		height: 123px;
+	    display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+	}
+	&__content-btn{
+		margin-left: 28px;
+		padding: 9px 30px;
+		background-color: #a3bbc8;
+		color: #ffffff;
+		border-radius: 20px;
+		text-transform: uppercase;
+		transform: translateY(-76%);
+		display: inline-block;
+		font-size: 14px;
+		line-height: 20px;
+		@extend %poppins-700;
+	}	
+	&__content-link{
+		color: #262626;
+		@extend %dmsans-700;
+		font-size: 18px;
+		width: 287px;
+		display: inline-block;
+		margin-top: -11px;
+		margin-bottom: 15px;
+	}	
+	&__content-tiny{
+		margin-bottom: 25px;
+		border-top: 1px solid #e0e0e0;
 		
 	}
-	// &__content-item{
-		
-	// }
+	&__content-date{
+		margin-right: 40px;
+	}
 }
+.partner{
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1045px;
+		margin: 0 auto;
+	}
+}
+
 
 
 
