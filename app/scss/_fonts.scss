@@ -17,7 +17,15 @@
 		 url('DMSans-Bold.woff') format('woff');
 	font-display: swap;
 }
-
+@font-face {
+	font-family: 'Rubik-Light';
+	font-weight: 300;
+	font-style: normal;
+	src: local(Rubik-Light),
+		 url('Rubik-Light.woff2') format('woff2'),
+		 url('Rubik-Light.woff') format('woff');
+	font-display: swap;
+}
 @font-face {
 	font-family: 'Rubik-Regular';
 	font-weight: 400;
@@ -27,7 +35,6 @@
 		 url('Rubik-Regular.woff') format('woff');
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Rubik-Medium';
 	font-weight: 500;
@@ -37,7 +44,15 @@
 		 url('Rubik-Medium.woff') format('woff');
 	font-display: swap;
 }
-
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	font-weight: 600;
+	font-style: normal;
+	src: local(Poppins-SemiBold),
+		 url('Poppins-SemiBold.woff2') format('woff2'),
+		 url('Poppins-SemiBold.woff') format('woff');
+	font-display: swap;
+}
 @font-face {
 	font-family: 'Poppins-Bold';
 	font-weight: 700;
