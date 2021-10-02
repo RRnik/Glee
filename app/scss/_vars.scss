@@ -28,6 +28,11 @@ $btn:#a3bbc8;
 	font-weight: 500;
 }
 
+%rubik-700{
+	font-family: 'Rubik-Bold', sans-serif;
+	font-weight: 700;
+}
+
 %poppins-600{
 	font-family: 'Poppins-SemiBold', sans-serif;
 	font-weight: 600;
@@ -40,14 +45,15 @@ $btn:#a3bbc8;
 
 %btn{
 	padding: 24px 100px 24px 25px;
-		background-color: transparent;
+		background-color: $btn;
 		color: #fff;
 		@extend %rubik-500;
 		font-size: 15px;
 		line-height: 12px;
 		position: relative;
 		&::after{
-			content: url(../images/icons/arrow-btn.svg);
+			content: '';
+			background-image: url(../images/icons/arrow-btn.svg);
 			position: absolute;
 			right: 23px;
 			top: 26px;
