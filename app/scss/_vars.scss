@@ -1,6 +1,7 @@
 $default: #436372;
 $title: #191919;
 $bg:#fef7f0;
+$btn:#a3bbc8;
 
 %dmsans-400{
 	font-family: 'DMSans-Regular', sans-serif;
@@ -10,6 +11,11 @@ $bg:#fef7f0;
 %dmsans-700{
 	font-family: 'DMSans-Regular', sans-serif;
 	font-weight: 700;
+}
+
+%rubik-300{
+	font-family: 'Rubik-Light', sans-serif;
+	font-weight: 300;
 }
 
 %rubik-400{
@@ -22,6 +28,16 @@ $bg:#fef7f0;
 	font-weight: 500;
 }
 
+%rubik-700{
+	font-family: 'Rubik-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%poppins-600{
+	font-family: 'Poppins-SemiBold', sans-serif;
+	font-weight: 600;
+}
+
 %poppins-700{
 	font-family: 'Poppins-Bold', sans-serif;
 	font-weight: 700;
@@ -29,14 +45,15 @@ $bg:#fef7f0;
 
 %btn{
 	padding: 24px 100px 24px 25px;
-		background-color: transparent;
+		background-color: $btn;
 		color: #fff;
 		@extend %rubik-500;
 		font-size: 15px;
 		line-height: 12px;
 		position: relative;
 		&::after{
-			content: url(../images/icons/arrow-btn.svg);
+			content: '';
+			background-image: url(../images/icons/arrow-btn.svg);
 			position: absolute;
 			right: 23px;
 			top: 26px;
