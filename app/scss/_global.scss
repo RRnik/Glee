@@ -40,3 +40,33 @@ a{
 	@extend %dmsans-700;
 	margin-bottom: 28px;
 }
+
+.breadcrumbs{
+	display: flex;
+	justify-content: center;
+	&__list{
+	display: flex;
+	}
+	&__item{
+		padding-right: 20px;
+		position: relative;
+		&::after{
+			content:'/';
+			position: absolute;
+			color: #909499;
+			right: 8px;
+			top: 1px;
+		}
+		&:last-child{
+			padding-right: 0;
+			&::after{
+			display: none;
+			}
+		}
+	}
+	&__link{
+	color:#909499;
+	font-size: 14px;
+	line-height: 21px;
+	}
+  }
