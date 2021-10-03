@@ -4,9 +4,6 @@
 @import'libs';
 @import'global';
 
-// *{
-// 	border: 2px solid red;
-// }
 
 .header{
 	padding: 48px 0;
@@ -167,6 +164,7 @@
 	}
 }
 }
+
 .top{
 	background-color: #edf1f4;
 	padding: 30px 0;
@@ -406,7 +404,7 @@
 	}
 }
 .new-design{
-	margin-bottom: 117px;
+	margin-bottom: 60px;
 	&__top{
 		text-align: center;
 	}
@@ -459,11 +457,11 @@
 	}
 }
 .news{
-	padding-bottom: 85px;
+	padding: 60px 0 85px;
  	background-image: url(../images/news-bg.jpg);
  	background-position: bottom ;
  	background-repeat: no-repeat;
- 	background-size: 100% 57%;
+ 	background-size: 100% 53%;
 	&__top{
 		display: flex;
 		justify-content: space-between;
@@ -598,7 +596,7 @@
 	@extend %rubik-500;
 }
 }
-// about
+// about-us
 .mission{
 	padding: 125px 0;
 	&__box{
@@ -708,7 +706,7 @@
 	}
 }
 .team{
-	margin-bottom: 175px;
+	margin-bottom: 115px;
 	&__box{
 		color: #243f4d;
 		display: flex;
@@ -776,6 +774,30 @@
 			  display: inherit;
 			  margin-left: 8px;
 		  }
+	}
+}
+// terms
+.terms{
+	padding-top: 110px;
+	margin-bottom: 55px;
+	&__item{
+		margin-bottom: 70px;
+		color: #243f4d;
+	}
+	&__title{
+		font-size: 24px;
+		@extend %rubik-500;
+		margin-bottom: 25px;
+	}
+	ol.terms__list{
+		padding-left: 30px;
+		display: inline-block;
+		list-style-type: decimal-leading-zero;
+	}
+	&__list-item + li{
+		margin-top: 30px;
+		color: #243f4d;
+
 	}
 }
 

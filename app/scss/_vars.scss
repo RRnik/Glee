@@ -54,6 +54,8 @@ $btn:#a3bbc8;
 		&::after{
 			content: '';
 			background-image: url(../images/icons/arrow-btn.svg);
+			width: 22px;
+			height: 9px;
 			position: absolute;
 			right: 23px;
 			top: 26px;
