@@ -54,6 +54,8 @@ $btn:#a3bbc8;
 		&::after{
 			content: '';
 			background-image: url(../images/icons/arrow-btn.svg);
+			width: 22px;
+			height: 9px;
 			position: absolute;
 			right: 23px;
 			top: 26px;
@@ -65,6 +67,14 @@ $btn:#a3bbc8;
 		font-size: 26px;
 		line-height: 32px;
 		margin-bottom: 25px;
+}
+
+%checkbox-hiden{
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
 }
 
 @function max($numbers...) {
