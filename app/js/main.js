@@ -14,9 +14,8 @@ $ (function () {
 	});
 
 		
-	$('.recent-products__stars').rateYo({
-		starWidth: "11px",
-		spacing: "4px"
+	$('.recent-products__stars,.shop-content__star').rateYo({
+		
 	  });
 
 	$('.top-slider__inner').slick({

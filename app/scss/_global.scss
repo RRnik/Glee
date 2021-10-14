@@ -70,3 +70,31 @@ a{
 	line-height: 21px;
 	}
   }
+
+  .pagination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	&__list{
+		display: flex;
+	}
+	&__link,
+	&__next{
+		padding: 17px 20px;
+		border: 1px solid #a3bbc8;
+		margin: 0 8px;
+		font-size: 16px;
+		line-height: 19px;
+		transition: all .3s;
+		&:hover{
+			background-color: #a3bbc8;
+			color:#fff;
+		}
+	}
+	&__link--active{
+		background-color: #a3bbc8;
+		color:#fff;
+		}
+	}
+	

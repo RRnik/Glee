@@ -12,7 +12,7 @@
 <body>
 
 	<header class="header">
-		<div class="container">
+		<div class="container-max">
 			<div class="header__inner">
 				<a class="logo" href="#">
 					<img class="logo__img" src="images/logo.png" alt="logo glee">
@@ -22,6 +22,12 @@
 					<ul class="menu__list">
 						<li class="menu__list-item">
 							<a class="menu__list-link" href="#">Home +</a>
+							<ul class="menu__list-drop">
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">1</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">2</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">3</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">4</a></li>
+							</ul>
 						</li>
 						<li class="menu__list-item">
 							<a class="menu__list-link" href="#">About</a>
@@ -31,6 +37,12 @@
 						</li>
 						<li class="menu__list-item">
 							<a class="menu__list-link" href="#">Pages +</a>
+							<ul class="menu__list-drop">
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="http://192.168.1.145:3000/product-1.html">Product-1</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">Product-2</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">3</a></li>
+								<li class="menu__list-item-drop"><a class="menu__list-link-drop" href="#">4</a></li>
+							</ul>
 						</li>
 						<li class="menu__list-item">
 							<a class="menu__list-link" href="#">News</a>
@@ -213,11 +225,15 @@
 							<ul class="recent-products__list">
 								<li class="recent-products__item">
 									<a class="recent-products__link" href="#">
-										<img class="recent-products__img" src="images/shop/lamp-icon-1.jpg"
-											alt="recernt img">
+										<div class="recent-products__images">
+											<img class="recent-products__img" src="images/shop/lamp-icon-1.png"
+												alt="recernt img">
+											</div>
 										<div class="recent-products__content">
 											<h6 class="recent-products__title">Pendant lamp</h6>
 											<div class="recent-products__stars" data-rateyo-read-only="true"
+											data-rateyo-spacing="4px"
+											data-rateyo-star-width="11px"
 											data-rateyo-rating="4"></div>
 											<p class="recent-products__price">23$</p>
 										</div>
@@ -225,11 +241,15 @@
 								</li>
 								<li class="recent-products__item">
 									<a class="recent-products__link" href="#">
-										<img class="recent-products__img" src="images/shop/lamp-icon-2.jpg"
-											alt="recernt img">
+										<div class="recent-products__images">
+											<img class="recent-products__img" src="images/shop/lamp-icon-2.png"
+												alt="recernt img">
+											</div>
 										<div class="recent-products__content">
 											<h6 class="recent-products__title">Pendant lamp</h6>
 											<div class="recent-products__stars" data-rateyo-read-only="true"
+											data-rateyo-spacing="4px"
+											data-rateyo-star-width="11px"
 											data-rateyo-rating="4"></div>
 											<p class="recent-products__price">23$</p>
 										</div>
@@ -237,11 +257,15 @@
 								</li>
 								<li class="recent-products__item">
 									<a class="recent-products__link" href="#">
-										<img class="recent-products__img" src="images/shop/lamp-icon-3.jpg"
-											alt="recernt img">
+										<div class="recent-products__images">
+											<img class="recent-products__img" src="images/shop/lamp-icon-3.png"
+												alt="recernt img">
+											</div>
 										<div class="recent-products__content">
 											<h6 class="recent-products__title">Pendant lamp</h6>
 											<div class="recent-products__stars" data-rateyo-read-only="true"
+											data-rateyo-spacing="4px"
+											data-rateyo-star-width="11px"
 											data-rateyo-rating="4"></div>
 											<p class="recent-products__price">23$</p>
 										</div>
@@ -312,7 +336,7 @@
 									<p class="galery__item-pricing">$29.00</p>
 								</div>
 							</div>
-							<!-- <div class="galery__item">
+							<div class="galery__item">
 								<div class="galery__item__block-img">
 									<img class="galery__item-img" src="images/galery/3.jpg" alt="galery image">
 									<div class="galery__icon">
@@ -601,7 +625,16 @@
 									<h5 class="galery__item-title">Retro table</h5>
 									<p class="galery__item-pricing">$29.00</p>
 								</div>
-							</div> -->
+							</div>
+						</div>
+
+						<div class="pagination">
+							<ul class="pagination__list">
+								<li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+								<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+								<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+							</ul>
+							<a class="pagination__next" href="#">Next</a>
 						</div>
 
 					</div>
