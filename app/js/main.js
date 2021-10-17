@@ -13,10 +13,29 @@ $ (function () {
         },
 	});
 
-		
-	$('.recent-products__stars,.shop-content__star').rateYo({
+	$('.select-style').styler({
+
+	});	
+
+	$('.star').rateYo({
 		
 	  });
+
+	    $('.details-tabs__top-item').on('click', function(e){
+			e.preventDefault();
+			$('.details-tabs__top-item').removeClass('details-tabs__top-item--active');
+			$(this).addClass('details-tabs__top-item--active');
+
+			$('.details-tabs__content-item').removeClass('details-tabs__content-item--active');
+			$($(this).attr('href')).addClass('details-tabs__content-item--active')
+		  });
+
+		  $('.addition-slider__inner').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			prevArrow:'<button type="button" class="slick-prev"><img src="images/icons/arrow-prev.svg" alt="arrow-prev"></button>',
+			nextArrow:'<button type="button" class="slick-next"><img src="images/icons/arrow-next.svg" alt="arrow-next"></button>',
+		  });
 
 	$('.top-slider__inner').slick({
 		dots: true,
@@ -25,6 +44,21 @@ $ (function () {
 		autoplay: true,
 		autoplaySpeed: 2000,
 	});
+
+	$('.details-slide__thumb').slick({
+		asNavFor: '.details-slide__big',
+		focusOnSelect: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		draggable: false,
+	  });
+	  $('.details-slide__big').slick({
+		asNavFor: '.details-slide__thumb',
+		draggable: false,
+		arrows: false,
+		fade: true,
+	  });
 
 	var containerEl1 = document.querySelector('[data-ref="container-1"]');
 	var containerEl2 = document.querySelector('[data-ref="container-2"]');
