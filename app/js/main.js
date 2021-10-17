@@ -21,6 +21,22 @@ $ (function () {
 		
 	  });
 
+	    $('.details-tabs__top-item').on('click', function(e){
+			e.preventDefault();
+			$('.details-tabs__top-item').removeClass('details-tabs__top-item--active');
+			$(this).addClass('details-tabs__top-item--active');
+
+			$('.details-tabs__content-item').removeClass('details-tabs__content-item--active');
+			$($(this).attr('href')).addClass('details-tabs__content-item--active')
+		  });
+
+		  $('.addition-slider__inner').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			prevArrow:'<button type="button" class="slick-prev"><img src="images/icons/arrow-prev.svg" alt="arrow-prev"></button>',
+			nextArrow:'<button type="button" class="slick-next"><img src="images/icons/arrow-next.svg" alt="arrow-next"></button>',
+		  });
+
 	$('.top-slider__inner').slick({
 		dots: true,
 		arrows: false,
