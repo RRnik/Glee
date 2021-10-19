@@ -83,7 +83,6 @@ a{
 	&__next{
 		padding: 17px 20px;
 		border: 1px solid #a3bbc8;
-		margin: 0 8px;
 		font-size: 16px;
 		line-height: 19px;
 		transition: all .3s;
@@ -91,6 +90,9 @@ a{
 			background-color: #a3bbc8;
 			color:#fff;
 		}
+	}
+	&__link:nth-child(1){
+		margin-right: 16px;
 	}
 	&__link--active{
 		background-color: #a3bbc8;

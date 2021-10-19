@@ -555,7 +555,7 @@
 		padding-top: 13px;
 	}
 	&__content-date{
-		margin-right: 30px;
+		margin-right: 25px;
 	}
 }
 .partner{
@@ -1240,12 +1240,139 @@
 		border: 2px solid #edf1f4;
 		border-radius: 4px;
 		cursor: pointer;
+		outline-color: #a3bbc8;
 		&:hover{
 			border-color: #a3bbc8;
 		}
 	}
 	.slick-prev{
 		right: 6%;
+	}
+
+
+	// blog
+	.blog{
+		padding: 120px 0;
+		&__inner{
+		display: flex;
+	}
+		&__content{
+			margin-right: 70px;
+			max-width: 830px;
+			width: 100%;
+		}
+		&__content-item{
+			margin-bottom: 50px;
+		}
+		&__content-box{
+			position: relative;
+			margin-bottom: 40px;
+		}
+		&__content-info{
+			width: 276px;
+			padding: 30px 0;
+			background-color: #a3bbc8;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+		}
+		&__content-title{
+			font-size: 36px;
+			color: #333;
+			margin-bottom: 30px;
+			max-width: 680px;
+			line-height: 38px;
+		}
+		&__content-text{
+			color: #243f4d;
+			max-width: 800px;
+			margin-bottom: 40px;
+		}
+		&__content-btn{
+			width: 180px;
+			display: inline-flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 22px 18px;
+			border: 1px solid #a3bbc8;
+			color: #a3bbc8;
+			font-size: 15px;
+			transition: all .3s;
+			&:hover{
+				background-color: #a3bbc8;
+				color: #fff;
+				path{
+					fill:#fff;
+				}
+			}
+		}
+		&__content-date,
+		&__content-author{
+			font-size: 12px;
+			color: #fff;
+			path{
+				fill:#fff;
+			}
+			svg{
+				transform: translate3d(-4px, 2px, 0px);
+			}
+		}
+		&__filters{
+			width: 270px;
+		}
+		&__recent-item{
+			display: flex;
+			justify-content: space-between;
+		}
+		&__recent-img{
+			width: 71px;
+			height: 71px;
+		}
+		&__recent-content{
+			max-width: 180px;
+		}
+		&__recent-title{
+			font-size: 14px;
+			color: #333;
+		}
+		&__recent-date{
+			color: #9a9a9a;
+			path{
+				fill:#9a9a9a;
+			}
+		}
+		.filter-search{
+
+			&__input{
+				width: 227px;
+				height: 44px;
+				padding: 10px;
+				border: 2px solid #ebf1f3;
+				color: #243f4d;
+				outline-color: #bee3f0;
+				border-radius: 4px;
+			}
+			&__btn{
+				border: none;
+				background-color: #ebf1f3;
+				width: 48px;
+				height: 44px;
+				border-radius: 4px;
+				margin-left: -10px;
+				cursor: pointer;
+				path{
+					fill: #245583;
+				}
+			}
+		}
+		
+
+
+
+		&__pagination{
+			margin-top: 80px;
+			justify-content: start;
+		}
 	}
 
 	
