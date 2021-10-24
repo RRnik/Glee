@@ -524,6 +524,8 @@
 		height: 251px;
 	}
 	&__content-img{
+		width: 370px;
+		height: 250px;
 		object-fit: cover;
 	}
 	&__content-btn{
@@ -1561,12 +1563,12 @@
 		}
 	}
 	.comments-form{
-		margin-top: 90px;
 		&__title{
 			color: #436372;
 			@extend %rubik-700;
 			font-size: 24px;
 			margin-bottom: 45px;
+			margin-top: 90px;
 		}
 		&__box-input{
 			margin-bottom: 20px;
@@ -1590,6 +1592,7 @@
 		}
 		&__input-name{
 			position: relative;
+			margin-right: 20px;
 			&::after{
 				content: "";
 				position: absolute;
@@ -1654,6 +1657,106 @@
 			line-height: 1;
 			text-transform: uppercase;
 			cursor: pointer;
+		}
+	}
+
+	.contact{
+		padding: 120px 0 60px;
+		&__top{
+			text-align: center;
+			margin-bottom: 70px;
+		}
+		&__subtitle{
+			@extend %poppins-700;
+			color: #a3bbc8;
+			margin-bottom: 15px;
+			line-height: 1;
+		}
+		&__title{
+			@extend %dmsans-700;
+			font-size: 35px;
+			color: #436372;
+		}
+	}
+	.contact-info{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 120px;
+		&__item{
+			width: 370px;
+			height: 380px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #fafafa;
+			outline-color: #a3bbc8;
+			transition: all .5s;
+			&:hover{
+				border: 1px solid #a3bbc8;
+				.contact-info__item-img{
+					background-color: #a3bbc8;
+					path{
+						fill:#fff;
+					}
+				}
+			}
+			& + .contact-info__item{
+				margin-left: 30px;
+			}
+		}
+		&__item-img{
+			width: 80px;
+			height: 80px;
+			border-radius: 15px;
+			box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 40px;
+			transition: all .5s;
+		}
+		&__item-title{
+			@extend %dmsans-700;
+			font-size: 20px;
+			color: #222;
+			margin-bottom: 10px;
+		}
+		&__item-text{
+			span{
+				display: block;
+				text-align: center;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.contact-box{
+		display: flex;
+		align-items: center;
+		height: 335px;
+		&__form{
+			width: 600px;
+		}
+		&__form-input{
+			width: 290px;
+			&::placeholder{
+				text-transform: uppercase;
+			}
+		}
+		&__form-textarea{
+			height: 163px;
+			&::placeholder{
+				text-transform: uppercase;
+			}
+		}
+		&__map{
+			margin-left: 70px;
+			width: 500px;
+			height: 335px;
+			iframe{
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 	
