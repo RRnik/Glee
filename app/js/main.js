@@ -1,5 +1,9 @@
 $ (function () {
 
+	$('.user-nav__link-menu').on('click', function(){
+		$('.menu__list').toggleClass('menu__list--active');
+	});
+
 	$('.filter-price__input').ionRangeSlider({
 		type: "double",
 		step: 0.01,

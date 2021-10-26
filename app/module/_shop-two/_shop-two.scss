@@ -1,0 +1,77 @@
+.shop-content{
+
+	&__item{
+		display: flex;
+		align-items: center;
+		margin-bottom: 45px;
+	}
+	&__images{
+		width: 370px;
+		height: 500px;
+		margin-right: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #f2f2f2;
+	}
+	&__aside{
+		max-width: 446px;
+	}
+	&__title{
+		font-size: 40px;
+		color: #333333;
+		margin-bottom: 30px;
+	}
+	&__price{
+		font-size: 30px;
+		color: #333333;
+		margin: 34px 0 30px;
+	}
+	&__text{
+		margin-bottom: 35px;
+		color: #243f4d;
+	}
+	&__big-button{
+		border: none;
+		padding: 12px 50px;
+		background-color: #a3bbc8;
+		font-size: 15px;
+		border-radius: 5px;
+		color: #fff;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	&__buttons{
+		display: flex;
+	}
+	&__btn{
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		background-color: inherit;
+		box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+		cursor: pointer;
+		transition: all .3s;
+		&:hover{
+			background-color: #a2b9c6;
+			path{
+				fill: #fff;
+			}
+		}	
+		&--active{
+			background-color: #a2b9c6;
+			path{
+				fill: #fff;
+			}
+		}	
+	}
+	&__btn-cart{
+		margin-right: 11px;
+	}
+}
+.pagination-product-2{
+	justify-content: flex-start;
+}

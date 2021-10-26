@@ -1,0 +1,52 @@
+.modal{
+	max-width: 470px;
+	padding: 120px 0;
+	margin: 0 auto;
+&__label{
+	font-size: 14px;
+	margin-bottom: 30px;
+	display: block;
+}
+&__input{
+	display: block;
+	width: 100%;
+	border: 2px solid #f6f6f6;
+	padding: 0 15px;
+	height: 60px;
+}
+&__btn{
+	display: block;
+	width: 100%;
+	margin: 37px 0 35px;
+	padding: 20px 0;
+	border: none;
+	background-color: $btn;
+	cursor: pointer;
+	color: #fff;
+	@extend %rubik-500;
+	font-size: 18px;
+}
+&__label-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #f6f6f6;
+}
+&__text{
+	margin: 35px 0 24px;
+	text-align: center;
+	display: block;
+}
+&__link-btn{
+	display: block;
+	width: 100%;
+	text-align: center;
+	border: 2px solid $btn;
+	padding: 20px 0;
+	font-size: 18px;
+	color: #243f4d;
+	@extend %rubik-500;
+}
+}

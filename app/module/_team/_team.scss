@@ -1,0 +1,71 @@
+.team{
+	margin-bottom: 115px;
+	&__box{
+		color: #243f4d;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info{
+		width: 300px;
+		padding-right: 12px;
+	}
+	&__info-title{
+		font-size: 36px;
+		@extend %dmsans-700;
+		margin-bottom: 35px;
+	}
+	&__info-link{
+		margin-top: 40px;
+		display: inline-block;
+		padding: 19px 60px 19px 19px;
+		background-color: $btn;
+		font-size: 15px;
+		color: #fff;
+		@extend %poppins-600;
+		border-radius: 5px;
+		position: relative;
+			&::after{
+			content: '';
+			position: absolute;
+			background-image: url(../images/about/icon/arrow-right.svg);
+			width: 15px;
+			height: 11px;
+			right: 22px;
+    		top: 24px;	
+		}
+	}
+
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(2,370px);
+		grid-gap: 100px 30px;
+	}
+	&__content-item{
+		position: relative;
+	}
+	&__content-aside{
+		width: 325px;
+		padding: 25px 27px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		bottom: -17%;
+		background-color: #fff;
+		box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+	}
+	&__content-social{
+		display: flex;
+
+	}
+	&__social-link{
+		padding: 10px;
+		  background-color: #f6f6f6;
+		  border-radius: 50%;
+		  &:last-child{
+			  padding: 7px;
+			  display: inherit;
+			  margin-left: 8px;
+		  }
+	}
+}
