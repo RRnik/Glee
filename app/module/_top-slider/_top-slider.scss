@@ -1,0 +1,107 @@
+.top-slider{
+	&__inner{
+	background-color: #fcd7b6;
+	padding-bottom: 45px;
+
+	}
+	&__item{
+		display: flex !important;
+		justify-content: center;
+		align-items:flex-end ;
+		padding-top: 220px;
+		margin-bottom: 208px;
+		position: relative;
+	&::after{
+		content: url(../images/slider-ball.png);
+		position: absolute;
+		top: 17%;
+		right: 11%;
+	 }
+	}
+	&__content{
+		margin-left: 100px;
+	}
+	&__title{
+		max-width: 530px;
+		color: #243f4d;
+		@extend %poppins-700;
+		font-size: 72px;
+		line-height: 70px;
+		margin-bottom: 35px;
+		text-transform: uppercase;
+	}
+	&__text{
+		max-width: 370px;
+		font-size: 18px;
+		margin-bottom: 41px;
+	}
+	&__btn{
+		@extend %btn;
+		background-color: #a3bbc8;
+	}
+	&__img{
+		z-index: 1;
+		margin-right: 150px;
+	}
+	.slick-dots{
+		display: flex;
+		justify-content: center;
+		li{
+			padding: 0 5px;
+			button{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				border: none;
+				background-color: #fde3cc;
+				color: #243f4d;
+				@extend %rubik-500;
+				font-size: 11px;
+				line-height: 8px;
+				cursor: pointer;
+			}
+			&.slick-active{
+				button{
+					background-color: #fff;
+				}
+			}
+		}	
+	}
+}
+.info{
+	max-width: 1770px;
+	margin: 0 auto;
+	background-color:#fef7f0;
+	&__inner{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		height: 170px;
+	}
+	&__item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:nth-of-type(n+2){
+			border-left: 1px solid #e8e4df;
+		}
+}
+	&__item-support,
+	&__item-delivery,
+	&__item-payment{
+		max-width: 212px;
+	}
+&__img{
+	margin: 0 25px;
+}
+	&__title{
+		@extend %dmsans-700;
+		font-size: 18px;
+		line-height: 19px;
+		color: #414141;
+		margin-bottom: 10px;
+	}
+	&__text{
+		color: #636362;
+		line-height: 20px;
+	}
+}

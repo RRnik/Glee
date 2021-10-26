@@ -1,0 +1,41 @@
+.addition-slider{
+	padding: 60px 0;
+	&__title{
+		color: #243f4d;
+		font-size: 36px;
+		@extend %dmsans-700;
+		margin-bottom: 70px;
+	}
+	&__inner{
+		.slick-prev,
+		.slick-next{
+			position: absolute;
+			top: -26%;
+			right: 0;
+			width: 46px;
+			height: 46px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: transparent;
+			border: 2px solid #a3bbc8;
+			border-radius: 4px;
+			cursor: pointer;
+			outline-color: #349bd3;
+		}
+		.slick-disabled{
+			border-color: #d6d6d6;
+			outline: none;
+			cursor: auto;
+			path{
+				fill: #c9cbcc ;
+			}
+		}
+		.slick-prev{
+			right: 6%;
+		}
+	}
+	&__item{
+		margin-bottom: 20px;
+	}
+}
