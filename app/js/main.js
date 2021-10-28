@@ -1,4 +1,16 @@
 $ (function () {
+  
+	
+		$('.footer-top__title-servicer').on('click', function(){
+		$(this).next('.footer-top__list').slideToggle();
+		$('.footer-top__item-servicer').toggleClass('footer-top__angle--active')
+	})
+
+	$('.footer-top__title-account').on('click', function(){
+		$(this).next('.footer-top__list').slideToggle();
+		$('.footer-top__item-account').toggleClass('footer-top__angle--active')
+	})
+
 
 	$('.user-nav__link-menu').on('click', function(){
 		$('.menu__list').toggleClass('menu__list--active');
