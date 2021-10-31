@@ -1,5 +1,20 @@
 $ (function () {
 
+		$('.shop__filter-btn').on('click', function(){
+			$('.shop__filters').slideToggle();
+		});
+  
+		$('.footer-top__title-servicer').on('click', function(){
+		$(this).next('.footer-top__list').slideToggle();
+		$('.footer-top__item-servicer').toggleClass('footer-top__angle--active')
+	});
+
+	$('.footer-top__title-account').on('click', function(){
+		$(this).next('.footer-top__list').slideToggle();
+		$('.footer-top__item-account').toggleClass('footer-top__angle--active')
+	});
+
+
 	$('.user-nav__link-menu').on('click', function(){
 		$('.menu__list').toggleClass('menu__list--active');
 	});
@@ -40,6 +55,26 @@ $ (function () {
 			prevArrow:'<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9"><path fill="#a3bbc8" d="M1460.7,1330.53h-16.94l0.1-2.86a0.3,0.3,0,0,0,.08-0.2,0.323,0.323,0,0,0-.08-0.21l-0.18-.17a0.267,0.267,0,0,0-.4,0l-4.2,4.21a0.3,0.3,0,0,0-.08.2,0.323,0.323,0,0,0,.08.21l4.2,4.21a0.29,0.29,0,0,0,.4,0l0.18-.17a0.323,0.323,0,0,0,.08-0.21,0.3,0.3,0,0,0-.08-0.2l-0.12-2.86h16.97a0.3,0.3,0,0,0,.29-0.3v-1.37A0.291,0.291,0,0,0,1460.7,1330.53Z" transform="translate(-1439 -1327)"/></svg></button>',
 			nextArrow:'<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9"><path fill="#a3bbc8" class="cls-1" d="M1509.3,1332.47h16.94l-0.1,2.86a0.3,0.3,0,0,0-.08.2,0.323,0.323,0,0,0,.08.21l0.18,0.17a0.267,0.267,0,0,0,.4,0l4.2-4.21a0.3,0.3,0,0,0,.08-0.2,0.323,0.323,0,0,0-.08-0.21l-4.2-4.21a0.29,0.29,0,0,0-.4,0l-0.18.17a0.323,0.323,0,0,0-.08.21,0.318,0.318,0,0,0,.08.2l0.12,2.86h-16.97a0.3,0.3,0,0,0-.29.3v1.37A0.291,0.291,0,0,0,1509.3,1332.47Z" transform="translate(-1509 -1327)"/></svg></button>',
 			infinite: false,
+			responsive: [
+				{
+				  breakpoint: 1200,
+				  settings: {
+					slidesToShow: 3,
+				  }
+				},
+				{
+					breakpoint: 850,
+					settings: {
+					  slidesToShow: 2,
+					}
+				  },
+				  {
+					breakpoint: 500,
+					settings: {
+					  slidesToShow: 1,
+					}
+				  },
+			]
 		  });
 
 	$('.top-slider__inner').slick({

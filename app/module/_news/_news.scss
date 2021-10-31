@@ -12,8 +12,10 @@
 	}
 	&__title{
 		margin-bottom: 0;
+		padding-right: 15px;
 	}
 	&__top-link{
+		// width: 95px;
 		@extend %dmsans-700;
 		font-size: 16px;
 		color: #262626;
@@ -27,8 +29,9 @@
 	&__content{
 		margin-bottom: 95px;
 		display: grid;
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(auto-fit, minmax(210px, 366px));
 		grid-column-gap: 30px;
+		justify-content: center;
 	}
 	&__content-item{
 		max-width: 370px;
@@ -64,13 +67,14 @@
 		@extend %dmsans-700;
 		font-size: 18px;
 		padding-right: 25px;
+
 	}
 	&__content-info{
 		border-top: 1px solid #e0e0e0;
 		position: absolute;
 		bottom: 25px;
-		display: flex;
-		width: 317px;
+		max-width: 317px;
+		width: 100%;
 		padding-top: 13px;
 	}
 	&__content-date{
@@ -83,5 +87,46 @@
 		justify-content: space-around;
 		align-items: center;
 		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+	&__item{
+		margin: 30px;
+	}
+}
+
+
+
+@media (max-width: 1300px){
+	.news{
+		background-size: cover;
+		&__content{
+		grid-row-gap: 30px;
+		}
+	}
+}
+@media (max-width: 600px){
+	.news{
+		&__top{
+			flex-direction: column;
+		}
+		&__title{
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 500px){
+	.news{
+		padding: 0 0 40px;
+		&__content-infobox{
+			margin: 35px 5px 15px 10px;
+		}
+		&__content-title{
+			padding-right: 0;
+		}
+	}	
+	.partner{
+		&__item{
+			margin: 15px;
+		}
 	}
 }

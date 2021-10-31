@@ -5,12 +5,13 @@
 		font-size: 36px;
 		@extend %dmsans-700;
 		margin-bottom: 70px;
+		display: inline-block;
 	}
 	&__inner{
 		.slick-prev,
 		.slick-next{
 			position: absolute;
-			top: -26%;
+			top: -102px;
 			right: 0;
 			width: 46px;
 			height: 46px;
@@ -22,6 +23,7 @@
 			border-radius: 4px;
 			cursor: pointer;
 			outline-color: #349bd3;
+			display: inline-block;
 		}
 		.slick-disabled{
 			border-color: #d6d6d6;
@@ -32,10 +34,28 @@
 			}
 		}
 		.slick-prev{
-			right: 6%;
+			right: 61px;
 		}
 	}
 	&__item{
 		margin-bottom: 20px;
+	}
+}
+@media (max-width: 600px){
+	.addition-slider{
+		padding-top: 0;
+		&__title {
+		font-size: 25px;
+		}
+	}
+}
+@media (max-width: 600px){
+	.addition-slider{
+		&__inner{
+			.slick-prev,
+			.slick-next{
+				top: -66px;
+			}
+		}
 	}
 }

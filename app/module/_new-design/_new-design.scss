@@ -5,9 +5,9 @@
 	}
 	&__content{
 		display: grid;
-		height: 525px;
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(auto-fit, minmax(210px, 366px));
 		grid-gap: 35px;
+		justify-content: center;
 		margin-bottom: 123px;
 	}
 	
@@ -58,3 +58,21 @@
 	.mixitup-control-active{
 		color: $title;
 	}
+
+	@media (max-width: 500px){
+		.new-design{
+			&__item {
+				padding-left: 15px;
+			}
+			&__video{
+				height: 230px;
+			}
+			&__play-img{
+				width: 100px;
+				&:hover{
+					width: 100px;
+				}
+			}
+		}
+	}
+	
