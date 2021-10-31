@@ -109,7 +109,9 @@
 		color:#243f4d;
 		&__top{
 			margin-bottom: 35px;
-			margin-left: 165px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 		&__top-item{
 			width: 240px;
@@ -121,6 +123,7 @@
 			font-size: 18px;
 			border-radius: 4px;
 			display: inline-block;
+			margin-bottom: 10px;
 			& + .details-tabs__top-item{
 				margin-left: 13px;
 			}

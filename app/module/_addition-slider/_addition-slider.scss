@@ -23,7 +23,6 @@
 			border-radius: 4px;
 			cursor: pointer;
 			outline-color: #349bd3;
-			display: inline-block;
 		}
 		.slick-disabled{
 			border-color: #d6d6d6;
@@ -38,12 +37,12 @@
 		}
 	}
 	&__item{
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 }
 @media (max-width: 600px){
 	.addition-slider{
-		padding-top: 0;
+		padding-top: 20px;
 		&__title {
 		font-size: 25px;
 		}
