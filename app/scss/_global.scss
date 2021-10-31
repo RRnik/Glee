@@ -44,10 +44,10 @@ a{
 }
 
 .breadcrumbs{
-	display: flex;
-	justify-content: center;
 	&__list{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	}
 	&__item{
 		padding-right: 20px;

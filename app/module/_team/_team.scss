@@ -6,7 +6,7 @@
 		justify-content: space-between;
 	}
 	&__info{
-		width: 300px;
+		max-width: 300px;
 		padding-right: 12px;
 	}
 	&__info-title{
@@ -36,15 +36,18 @@
 	}
 
 	&__content{
+		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2,370px);
 		grid-gap: 100px 30px;
+		grid-template-columns: repeat(auto-fit, minmax(210px, 370px));
+		justify-content: center;
 	}
 	&__content-item{
 		position: relative;
 	}
 	&__content-aside{
-		width: 325px;
+		max-width: 325px;
+		width: 100%;
 		padding: 25px 27px;
 		display: flex;
 		justify-content: space-between;
@@ -67,5 +70,19 @@
 			  display: inherit;
 			  margin-left: 8px;
 		  }
+	}
+}
+
+
+@media (max-width: 1100px){
+	.team{
+		margin-bottom: 115px;
+		&__box{
+			display: block;
+		}
+		&__info{
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
 	}
 }
